@@ -1,4 +1,4 @@
-The Websit is live now on : https://rvcoronatracker.netlify.com/
+The Website is live now on : https://rvcoronatracker.netlify.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
