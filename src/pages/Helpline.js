@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, Fragment } from "react";
+import React, { useContext, useEffect } from "react";
 import { withStyles, makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -32,7 +32,7 @@ const useStyles = makeStyles({
   table: {
     marginBottom: 50,
     marginTop: 50,
-    maxWidth: 700
+    width: "auto"
   }
 });
 

@@ -9,6 +9,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import CoronaContext from "../context/corona/coronaContext";
+import Graph from "../components/Graph";
 
 const StyledTableCell = withStyles(theme => ({
   head: {
@@ -32,7 +33,7 @@ const useStyles = makeStyles({
   table: {
     marginBottom: 50,
     marginTop: 50,
-    maxWidth: 700
+    width: "auto"
   }
 });
 
@@ -53,6 +54,7 @@ const Home = () => {
       <h3 className='black-text center'>COVID-19 Statistics(INDIA)</h3>
       <hr></hr>
       <CardView />
+      <Graph />
       <TableContainer component={Paper}>
         <Table
           className={classes.table}

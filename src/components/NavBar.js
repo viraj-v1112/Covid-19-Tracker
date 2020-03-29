@@ -1,24 +1,14 @@
-import React, { Fragment, useContext, useEffect } from 'react';
-import CoronaContext from '../context/corona/coronaContext';
-import Spinner from './Spinner';
-import { Link } from 'react-router-dom';
+import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  // const coronaContext = useContext(CoronaContext);
-  // const { data, getStats, getHelp, loading } = coronaContext;
-  // useEffect(() => {
-  //   getStats();
-  //   getHelp();
-  //   // eslint-disable-next-line
-  // }, []);
-
   return (
     <Fragment>
       <nav>
         <div
           className='nav-wrapper'
           style={{
-            backgroundImage: 'linear-gradient(19deg,#0067a1,#303f9f)'
+            backgroundImage: "linear-gradient(19deg,#0067a1,#303f9f)"
           }}
         >
           <div className='brand-logo left'>
