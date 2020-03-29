@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, Fragment } from 'react';
-import { withStyles, makeStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
-import CoronaContext from '../context/corona/coronaContext';
-import Spinner from '../components/Spinner';
+import React, { useContext, useEffect, Fragment } from "react";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
+import Table from "@material-ui/core/Table";
+import TableBody from "@material-ui/core/TableBody";
+import TableCell from "@material-ui/core/TableCell";
+import TableContainer from "@material-ui/core/TableContainer";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
+import Paper from "@material-ui/core/Paper";
+import CoronaContext from "../context/corona/coronaContext";
+import Spinner from "../components/Spinner";
 
 const StyledTableCell = withStyles(theme => ({
   head: {
@@ -22,7 +22,7 @@ const StyledTableCell = withStyles(theme => ({
 
 const StyledTableRow = withStyles(theme => ({
   root: {
-    '&:nth-of-type(odd)': {
+    "&:nth-of-type(odd)": {
       backgroundColor: theme.palette.background.default
     }
   }
@@ -47,8 +47,7 @@ export default function CustomizedTables() {
     getHelp();
     // eslint-disable-next-line
   }, []);
-  console.log('help', help);
-  console.log('loading', loading);
+
   const { regional, primary } = help;
 
   if (loading) {

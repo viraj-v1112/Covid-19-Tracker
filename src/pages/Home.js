@@ -43,6 +43,11 @@ const Home = () => {
 
   const { statewise } = coronaContext;
 
+  const statewisesort = statewise
+    .sort(function(a, b) {
+      return a.confirmed - b.confirmed;
+    })
+    .reverse();
   return (
     <Fragment>
       <h3 className='black-text center'>COVID-19 Statistics(INDIA)</h3>
@@ -64,7 +69,7 @@ const Home = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {statewise.map(row => (
+            {statewisesort.map(row => (
               <StyledTableRow key={row.state}>
                 <StyledTableCell component='th' scope='row'>
                   {row.state}
