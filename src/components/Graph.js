@@ -44,7 +44,6 @@ const Graph = () => {
         data={data}
         margin={{ top: 5, right: 20, bottom: 20, left: 0 }}
       >
-<<<<<<< HEAD
         <Line
           type='monotone'
           dataKey='Total'
@@ -71,14 +70,12 @@ const Graph = () => {
         />
         <CartesianGrid stroke='#ccc' strokeDasharray='5 5' />
         <XAxis dataKey='name' interval={3} />
-=======
         <Line type='monotone' dataKey='Total' stroke='#004e92' activeDot={{ r: 8 }}/>
         <Line type='monotone' dataKey='Active' stroke='#7b4397' />
         <Line type='monotone' dataKey='Recovered' stroke='#0f9b0f' />
         <Line type='monotone' dataKey='Deaths' stroke='#6f0000' />
         <CartesianGrid stroke='#ccc' strokeDasharray='5' />
         <XAxis dataKey='name' />
->>>>>>> 0a866dadd02d3b06bc8d2c99b1aba3a6a1ca8a0a
         <YAxis />
         <Tooltip />
       </LineChart>
