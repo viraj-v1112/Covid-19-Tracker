@@ -68,12 +68,6 @@ const Graph = () => {
           stroke='#6f0000'
           activeDot={{ r: 6 }}
         />
-        <CartesianGrid stroke='#ccc' strokeDasharray='5 5' />
-        <XAxis dataKey='name' interval={3} />
-        <Line type='monotone' dataKey='Total' stroke='#004e92' activeDot={{ r: 8 }}/>
-        <Line type='monotone' dataKey='Active' stroke='#7b4397' />
-        <Line type='monotone' dataKey='Recovered' stroke='#0f9b0f' />
-        <Line type='monotone' dataKey='Deaths' stroke='#6f0000' />
         <CartesianGrid stroke='#ccc' strokeDasharray='5' />
         <XAxis dataKey='name' />
         <YAxis />
