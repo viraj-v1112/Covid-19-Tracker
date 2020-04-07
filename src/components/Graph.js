@@ -20,8 +20,21 @@ const Graph = () => {
     getDailyData();
     // eslint-disable-next-line
   }, []);
+
   if (history.length > 0) {
-    data = history.map((historydata) => ({
+    let i, j;
+    let histupdat = [];
+    for (i = 0, j = 1; i < history.length, j < history.length - 1; i++, j++) {
+      var h1 = history[i].day;
+      var h2 = history[j].day;
+      if (h1 === h2) {
+        i++;
+        j++;
+      }
+      histupdat.push(history[i]);
+    }
+    histupdat.push(history[history.length - 1]);
+    data = histupdat.map((historydata) => ({
       name: historydata.day,
       Total: historydata.total.confirmed,
       Recovered: historydata.total.recovered,
