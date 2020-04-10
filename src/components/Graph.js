@@ -33,7 +33,8 @@ const Graph = () => {
       }
       histupdat.push(history[i]);
     }
-    histupdat.push(history[history.length - 1]);
+    histupdat.push(history[i]);
+    histupdat.push(history[j]);
     data = histupdat.map((historydata) => ({
       name: historydata.day,
       Total: historydata.total.confirmed,
