@@ -22,20 +22,20 @@ const Graph = () => {
   }, []);
 
   if (history.length > 0) {
-    let i, j;
-    let histupdat = [];
-    for (i = 0, j = 1; i < history.length, j < history.length - 1; i++, j++) {
-      var h1 = history[i].day;
-      var h2 = history[j].day;
-      if (h1 === h2) {
-        i++;
-        j++;
-      }
-      histupdat.push(history[i]);
-    }
-    histupdat.push(history[i]);
-    histupdat.push(history[j]);
-    data = histupdat.map((historydata) => ({
+    // let i, j;
+    // let histupdat = [];
+    // for (i = 0, j = 1; i < history.length, j < history.length - 1; i++, j++) {
+    //   var h1 = history[i].day;
+    //   var h2 = history[j].day;
+    //   if (h1 === h2) {
+    //     i++;
+    //     j++;
+    //   }
+    //   histupdat.push(history[i]);
+    // }
+    // histupdat.push(history[i]);
+    // histupdat.push(history[j]);
+    data = history.map((historydata) => ({
       name: historydata.day,
       Total: historydata.total.confirmed,
       Recovered: historydata.total.recovered,
